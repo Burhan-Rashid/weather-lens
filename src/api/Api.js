@@ -4,8 +4,12 @@ export const getWeather = async (city) => {
     const url = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=${city}&appid=${API_KEY}`;
     try {
         const response = await fetch(url);
-        const data = await response.json();
-        return data;
+        if (response.status === 200) {
+            const data = await response.json();
+            return data;
+        } else {
+            return null;
+        }
     } catch (err) {
         console.log(err);
     }
