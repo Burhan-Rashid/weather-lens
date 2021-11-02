@@ -6,17 +6,26 @@ function Card({ search, weather }) {
 
     const [city, setCity] = React.useState("");
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        search(city)
+    }
+
     return (
         <div className="Card">
             <div className="searchBar">
-                <input type="text"
-                    placeholder="Search"
-                    value={city}
-                    onChange={(e) => setCity(e.target.value)}
-                />
-                <img src={searchLogo} alt="..." onClick={() => search(city)} />
+                <form className="form" onSubmit={handleSubmit}>
+                    <input type="text"
+                        placeholder="Search"
+                        value={city}
+                        onChange={(e) => setCity(e.target.value)}
+                    />
+                </form>
+                <div className="searchIcon">
+                    <img src={searchLogo} alt="..." onClick={() => search(city)} />
+                </div>
             </div>
-            <div className="description">
+            <div className={weather.name ? "description" : "none"}>
                 <h3>Weather in {weather.name}</h3>
                 <h2>{weather.temp} &deg;C</h2>
                 <div className="flex">

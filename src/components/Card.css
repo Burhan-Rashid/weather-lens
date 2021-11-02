@@ -7,27 +7,55 @@
   padding: 30px;
   color: white;
 }
+.form {
+  display: flex;
+  flex: 1;
+}
 .searchBar {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
+  margin-right: 5px;
 }
-.searchBar > input {
+.searchBar > form > input {
   outline: none;
+  border: none;
   border-radius: 25px;
   padding: 5px 10px;
   height: 25px;
   flex: 1;
   font-size: 1.1rem;
-  background-color: rgba(11, 12, 12, 0.397);
+  background: #7c7c7c2b;
   color: white;
+}
+.searchIcon {
+  background: #7c7c7c2b;
+  padding: 5px;
+  height: 25px;
+  width: 25px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+}
+.searchIcon:hover {
+  cursor: pointer;
+  background: #7c7c7c6b;
+}
+.searchIcon > img {
+  height: 15px;
+  width: 15px;
 }
 .description {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0;
+}
+.none {
+  display: none;
 }
 .flex {
   display: flex;
