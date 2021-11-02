@@ -79,3 +79,9 @@ p {
   margin: 0;
   margin-bottom: 5px;
 }
+
+@media (max-width: 800px) {
+  .Card {
+    width: 70%;
+  }
+}
