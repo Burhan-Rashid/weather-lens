@@ -16,7 +16,7 @@ function Card({ search, weather }) {
             <div className="searchBar">
                 <form className="form" onSubmit={handleSubmit}>
                     <input type="text"
-                        placeholder="Search"
+                        placeholder="Enter a City Name"
                         value={city}
                         onChange={(e) => setCity(e.target.value)}
                     />
