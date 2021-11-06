@@ -1,5 +1,5 @@
-# To See the Live Demo of this project, go to:
-[Live Demo](weather-lens.vercel.app)
+## You can see the live demo of this project here [Live Demo](https://weather-lens.vercel.app)
+
 
 # Getting Started with Create React App
 
