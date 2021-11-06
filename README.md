@@ -1,3 +1,6 @@
+# To See the Live Demo of this project, go to:
+[Live Demo](weather-lens.vercel.app)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
